@@ -1,27 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   StyleSheet,
   View,
   Text,
   Button,
+  Alert,
 } from 'react-native';
+import Counter from './src/screens/Counter';
 
 
 const App = () => {
+
   return (
-    <View style={styles.app}>
-      <Text>Hello</Text>
-      <Button title="Press me!"/>
-    </View>
+    <Counter />
   );
 };
 
-const styles = StyleSheet.create({
-  app: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
-});
+
 
 export default App;
