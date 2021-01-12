@@ -14,7 +14,7 @@ export default function Counter() {
     <View style={styles.container}>
       <Text>Counter: {counter}</Text>
       <Button title="Increment!" onPress={() => setCounter(counter + 1)} />
-      <Button title="Decerement!" onPress={() => setCounter(counter - 1)} />
+      <Button title="Decrement!" onPress={() => setCounter(counter - 1)} />
     </View>
   );
 }

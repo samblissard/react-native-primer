@@ -1,6 +1,6 @@
 import React from 'react';
 import Counter from './src/screens/Counter';
-import ScrollableList from './src/screens/ScrollableList';
+import Contacts from './src/screens/Contacts';
 import {NavigationContainer} from '@react-navigation/native';
 import AppNavigator from './src/navigators/AppNavigator';
 

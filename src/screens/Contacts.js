@@ -6,6 +6,7 @@ import {
   StyleSheet,
   TextInput,
   Button,
+  Keyboard,
 } from 'react-native';
 
 const initialContactList = [
@@ -41,19 +42,20 @@ const initialContactList = [
   'Chang Kranz',
 ];
 
-export default function ScrollableList() {
+export default function Contacts() {
   const [contacts, setContacts] = useState(initialContactList);
   const [newContact, setNewContact] = useState('');
 
   const addContact = () => {
     setContacts([...contacts, newContact]);
     setNewContact('');
+    Keyboard.dismiss();
   };
 
   return (
     <View style={styles.container}>
       <TextInput
-        style={{backgroundColor: 'white', height: 50}}
+        style={styles.newContactInput}
         value={newContact}
         onChangeText={setNewContact}
       />
@@ -81,5 +83,9 @@ const styles = StyleSheet.create({
   divider: {
     borderBottomColor: 'lightgrey',
     borderBottomWidth: 1,
+  },
+  newContactInput: {
+    backgroundColor: 'white',
+    height: 50,
   },
 });
