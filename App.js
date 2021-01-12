@@ -7,12 +7,14 @@ import {
   Alert,
 } from 'react-native';
 import Counter from './src/screens/Counter';
+import ScrollableList from './src/screens/ScrollableList';
 
 
 const App = () => {
 
   return (
-    <Counter />
+    // <Counter />
+    <ScrollableList />
   );
 };
 
